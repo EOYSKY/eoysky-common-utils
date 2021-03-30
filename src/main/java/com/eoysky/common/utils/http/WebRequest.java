@@ -278,7 +278,6 @@ public class WebRequest implements Serializable {
     /**
      * ContentType
      *
-     * @author junhua.pan
      * @version $Id: ContentType.java, v 0.1 Jun 22, 2018 11:38:16 AM junhua.pan Exp $
      */
     public static enum ContentType {

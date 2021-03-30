@@ -370,7 +370,6 @@ public final class HttpUrlClient {
     /**
      * 自定义的忽略所有https证书
      *
-     * @author junhua.pan
      * @version $Id: SelfTrustManager.java, v 0.1 Sep 3, 2018 9:24:11 PM junhua.pan Exp $
      */
     public static class SelfTrustManager implements X509TrustManager {
