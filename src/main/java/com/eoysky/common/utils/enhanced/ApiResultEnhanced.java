@@ -15,7 +15,7 @@ import com.eoysky.common.utils.model.ServiceResult;
  * @author Jonny.Chang
  * @version ApiResultEnhanced.java, v 0.1 2021年03月30日 10:33 下午 jonny
  */
-public class ApiResultEnhanced {
+public abstract class ApiResultEnhanced {
 
     /**
      * 通过 service 结果构建 api 返回结果
@@ -24,7 +24,7 @@ public class ApiResultEnhanced {
      * @param <T>
      * @return
      */
-    protected static <T> BaseResult<T> buildResByServiceRes(ServiceResult<T> serviceResult) {
+    public static <T> BaseResult<T> buildResByServiceRes(ServiceResult<T> serviceResult) {
         ResultCodeEnum resultCode = serviceResult.getResultCode();
         if (resultCode == ResultCodeEnum.UNAUTHORIZED_ACCESS) {
             return new BaseResult<>(false, resultCode.getCode(), serviceResult.getData(), serviceResult.getResultMsg());
@@ -40,7 +40,7 @@ public class ApiResultEnhanced {
      * @param <T>
      * @return
      */
-    protected static <T> BasePageResult<T> buildPageResByServiceRes(ServicePageResult<T> serviceResult) {
+    public static <T> BasePageResult<T> buildPageResByServiceRes(ServicePageResult<T> serviceResult) {
         ResultCodeEnum resultCode = serviceResult.getResultCode();
         return new BasePageResult<>(ResultCodeEnum.SUCCESS == resultCode, resultCode.getCode(),
                 serviceResult.getData(), resultCode.getMsg(), serviceResult.getPageNo(), serviceResult.getPageSize(),
