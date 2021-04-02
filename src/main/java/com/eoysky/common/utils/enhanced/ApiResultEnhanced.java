@@ -20,9 +20,9 @@ public abstract class ApiResultEnhanced {
     /**
      * 通过 service 结果构建 api 返回结果
      *
-     * @param serviceResult
-     * @param <T>
-     * @return
+     * @param serviceResult serviceResult
+     * @param <T> T
+     * @return BaseResult
      */
     public static <T> BaseResult<T> buildResByServiceRes(ServiceResult<T> serviceResult) {
         ResultCodeEnum resultCode = serviceResult.getResultCode();
@@ -34,11 +34,11 @@ public abstract class ApiResultEnhanced {
     }
 
     /**
-     * 通过service page 结果构建api返回结果
+     * 通过 service page 结果构建api返回结果
      *
-     * @param serviceResult
-     * @param <T>
-     * @return
+     * @param serviceResult serviceResult
+     * @param <T> T
+     * @return BasePageResult
      */
     public static <T> BasePageResult<T> buildPageResByServiceRes(ServicePageResult<T> serviceResult) {
         ResultCodeEnum resultCode = serviceResult.getResultCode();

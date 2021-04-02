@@ -28,7 +28,7 @@ public class WebRequest implements Serializable {
     private String charset;
 
     /**
-     * <@see org.apache.http.entity.ContentType> equals mimeType
+     * org.apache.http.entity.ContentType  equals mimeType
      */
     private ContentType contentType;
 
@@ -85,7 +85,7 @@ public class WebRequest implements Serializable {
     }
 
     /**
-     * 指定字符集 & ContentType的构造函数
+     * 指定字符集 ContentType的构造函数
      *
      * @param body        请求体
      * @param charset     字符集
