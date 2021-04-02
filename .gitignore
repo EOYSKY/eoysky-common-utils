@@ -1,9 +1,33 @@
-/target
-/.project
-/.settings
-/.classpath
-/.idea
-/.DS_Store
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+.factorypath
+
+# Gradle
+.gradle/
+build/
+
+#IDEA
+# idea ignore
+.idea/
+*.ipr
 *.iml
-/bin/
-/$HOME/.m2/repository/
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+.jython_cache/
+
+# system ignore
+.DS_Store
+Thumbs.db
