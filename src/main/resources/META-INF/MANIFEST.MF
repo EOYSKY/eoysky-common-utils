@@ -1,4 +1,3 @@
-Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Built-By: Jonny.Chang
 Created-By: Apache Maven 3.6.3
